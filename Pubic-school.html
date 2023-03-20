@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallehermoso - Negros Oriental </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js"></script>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="navbar" id="navbar" >
+            <img id="navbar-img" src="./src/vallehermoso-image.png">
+            <div class="login-btn">
+                <a href="">Log In</a>
+            </div>
+            <div class="signup-btn">
+                <a href="">Sign Up</a>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <button class="w3-butto" id="button-home" ><a href="home.html">Home</a></button>
+                    <div class="w3-dropdown-click">
+                        <button onclick="myFunction0()" class="w3-button"><a>Events</a></button>
+                        <div id="Demo0" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom" style="background:white;margin-left:-2.5rem;">
+                            <a href="festival.html" class="w3-bar-item w3-button" style="text-align: center;" >Festivals</a>
+                            <a href="#" class="w3-bar-item w3-button" style="text-align: center;">Link 2</a>
+                            <a href="#" class="w3-bar-item w3-button" style="text-align: center;">Link 3</a>
+                           
+                        </div>
+                    </div>
+                    <div class="w3-dropdown-click">
+                        <button onclick="myFunction1()" class="w3-button"><a>Places</a></button>
+                        <div id="Demo1" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom" style="background:white;margin-left:-2.5rem;">
+                            <a href="Place-Interest.html" class="w3-bar-item w3-button" style="text-align: center;">Place of Interest</a>
+                            <a href="Pubic-school.html" class="w3-bar-item w3-button"  style="text-align: center;">Public Schools</a>
+                            
+                        </div>
+                    </div>
+                    <div class="w3-dropdown-click">
+                        <button onclick="myFunction2()" class="w3-button"><a>Tourist Spots</a></button>
+                        <div id="Demo2" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom" style="background:white;margin-left:-1rem;">
+                            <a href="sayaw-falls.html" class="w3-bar-item w3-button" style="text-align: center;">Sayaw Falls</a>
+                            <a href="Maglahos-cave.html" class="w3-bar-item w3-button"  style="text-align: center;">Maglahos Cave</a>
+                            <a href="Pinocauan Falls.html" class="w3-bar-item w3-button"  style="text-align: center;">Pinocauan Falls</a>
+                        </div>
+                    </div>
+                    <div class="w3-dropdown-click">
+                        <button onclick="myFunction3()" class="w3-button"><a>Living</a></button>
+                        <div id="Demo3" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom" style="background:white;margin-left:-2.5rem;">
+                            <a href="Economy.html" class="w3-bar-item w3-button" style="text-align: center;">Economy</a>
+                            <a href="climate.html" class="w3-bar-item w3-button"  style="text-align: center;">Climate</a>
+                            <a href="#" class="w3-bar-item w3-button"  style="text-align: center;">Link 3</a>
+                        </div>
+                    </div>
+                    <button class="w3-button"><a>About</a></button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p style="color: white;">©2021 Copyright - Valehermoso, Negros Oriental</p>
+        <div class="info">
+            <p style="color: white;">Privacy Policy</p>
+            <p style="color: white;">Terms of Use</p>
+            <p style="color: white;">Contact Us</p>
+        </div>
+        <div class="social-links-footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-tumblr"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </div>
+    </div>
+    <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "10px";
+      document.getElementById("navbar-img").style.width = "23%";
+    } else {
+      document.getElementById("navbar").style.padding = "20px";
+      document.getElementById("navbar-img").style.width = "30%";
+    }
+  }
+  </script>
+        
+</body>
+</html>

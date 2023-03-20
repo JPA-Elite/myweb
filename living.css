@@ -1,0 +1,365 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    overflow-x: hidden;
+  
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.main {
+    background-color: #fff;
+    
+}
+.container-section {
+    padding-top: 20vh;
+}
+span{
+    font-size: 1.2em;
+}
+ h1,h3,span{
+    text-shadow: -1px -1px 1px #fff;
+    color:#26282d;
+    font-family: "Segoe UI","Trebuchet MS","Open Sans","Helvetica","Liberation Sans";
+    text-rendering: auto;
+    font-weight: bold;
+
+}
+p {
+    font-family: "Segoe UI","Trebuchet MS","Open Sans","Helvetica","Liberation Sans";
+    line-height: 2em;
+    clear: left;
+    font-size: 1.1em;
+}
+.toc-list {
+    justify-content: center;
+    margin-block-end: 1em;
+    margin-right: 4rem;
+}
+ul {
+    gap: 1rem;
+}
+li:hover {
+    color: blue;
+}
+a {
+    font-size: .9em;
+    color:#034575 ;
+    
+}
+li {
+    text-decoration: underline;
+}
+tr {
+      background-color: #8daed0;
+} 
+.iBox tr>th, .iBox tr>td {
+    vertical-align: text-top;
+    padding: 0.375rem;
+}
+.iboxProp {
+    word-break: initial;
+}
+.iboxTitle, .iboxProp {
+    font-weight: 700;
+ 
+}
+.iboxProp, .iboxVal {
+    text-align: left;
+    border: 1px solid yellow;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+.iBox-container {
+    justify-content:right;
+}
+.ibox{
+    max-width: 18.5rem;
+    float: right;
+    margin:auto;
+    word-break: break-word;
+    line-height: 1.3rem;
+    border: 1px solid #767676;
+    border-radius: 0.25em;
+    font-size: 90%;
+    border-collapse: collapse;
+
+}
+article table {
+    display: block;
+    overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+ul#nav {
+    border: 1px solid #454545;
+    display: block;
+    height: 400px;
+    margin: 0;
+    padding: 15px;
+    width: 600px;
+    display: flex;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -o-border-radius: 9px;
+    border-radius: 9px;
+
+    background: -moz-linear-gradient(#f1f7ff, #d9e1ec);
+    background: -ms-linear-gradient(#f1f7ff, #d9e1ec);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f7ff), color-stop(100%, #d9e1ec));
+    background: -webkit-linear-gradient(#f1f7ff, #d9e1ec);
+    background: -o-linear-gradient(#f1f7ff, #d9e1ec);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f7ff', endColorstr='#d9e1ec');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f7ff', endColorstr='#d9e1ec')";
+    background-image: url('https://media.philstar.com/photos/2020/12/30/ph-christmas-masks_2020-12-30_11-52-15.jpg'),linear-gradient(to bottom, rgba(66, 66, 67, 0.52), 
+  rgba(0, 0, 0, 0.73));
+    -moz-box-shadow: 0px 10px 50px rgb(51, 43, 43);
+    -webkit-box-shadow: 0px 10px 50px rgb(39, 37, 37);
+     box-shadow: 0px 2px 20px rgb(33, 31, 31);
+}
+
+@-moz-keyframes custom_effect {
+    0% {
+        background:rgba(255, 255, 255, 0.0);
+        height: 60px;
+    }
+    33% {
+        background:rgba(255, 255, 255, 0.0);
+        height: 150px;
+        opacity: 0.5;
+    }
+    66% {
+        background:rgba(255, 255, 255, 1.0);
+        opacity: 0.8;
+    }
+    100% {
+        background:rgba(190, 220, 255, 0.8);
+        height: 350px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes custom_effect {
+    0% {
+        background:rgba(255, 255, 255, 0.0);
+        height: 60px;
+        opacity: 0;
+    }
+    33% {
+        background:rgba(255, 255, 255, 0.0);
+        height: 150px;
+        opacity: 0.3;
+    }
+    66% {
+        background:rgba(255, 255, 255, 1.0);
+        opacity: 0.8;
+    }
+    100% {
+        background:rgba(190, 220, 255, 0.8);
+        height: 350px;
+        opacity: 1;
+    }
+}
+ul#nav li {
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -o-border-radius: 9px;
+    border-radius: 9px;
+    align-items: center;
+
+    background-color:transparent;
+    border: 1px solid #454545;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 600px;
+
+}
+ul#nav li:hover {
+    -moz-animation-name: custom_effect;
+    -moz-animation-duration: 0.4s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+
+    -webkit-animation-name: custom_effect;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    background:rgba(190, 220, 255, 0.8);
+    height:200px;
+}
+ ul#nav img {
+    border-style: none;
+    border-width: 0;
+    cursor: pointer;
+    line-height: 30px;
+    margin-top: 100px;
+    vertical-align: middle;
+
+    -moz-transition: all 0.1s 0.4s;
+    -ms-transition: all 0.1s 0.4s;
+    -o-transition: all 0.1s 0.4s;
+    -webkit-transition: all 0.1s 0.4s;
+    transition: all .7s;
+}
+ul#nav li a:first-child {
+    display: block;
+    float: none;
+    line-height: 60px;
+    margin-top: 0;
+    color: rgb(0, 0, 0);
+    background-color: #dfe6ed;
+}
+ul#nav li:hover a:first-child {
+    line-height: 60px;
+}
+ul#nav li:hover a, ul#nav li:hover img {
+    margin-top: 0;
+
+}
+
+.dropbtn {
+  background-color: #f5f5f5;
+  border:#ddd;
+  color: #03a9f4;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight:bold;
+  padding-right: 5rem;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+   color: red;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 800px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 0.5rem;
+  margin-left: 16rem;
+  position: absolute;
+}
+.dropbtn:hover, .dropbtn:focus {
+   color: red;
+}
+.show {display: block;}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+#myDIV {
+    width: 80%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+ }
+ #myDIV img {
+     border: 2px solid black;
+ }
+.button-onclick:hover {
+    text-decoration: underline;
+    color:blue;
+}
+.button-onclick:focus {
+    color: red;
+    text-decoration: underline;
+}
+
+#sources-list {
+    list-style-position: inside;
+    list-style-type: square;
+    line-height: 1.3rem;
+}
+
+#sources-list li {
+    text-decoration: none;
+    list-style-type:square;
+}
+
+#myBte {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #111;
+    opacity: 0.7;
+    transition: all 2s;
+}
+#myBte:hover {
+    background-color: rgb(148, 48, 48);
+    opacity: 1;
+}
+button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+     overflow: visible;
+}
+button, input, select, textarea, optgroup {
+    font: inherit;
+    margin: 0;
+}
+
+
+
